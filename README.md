@@ -12,6 +12,6 @@ This directory contains a MSGraph project sample that utilizes the GraphServiceC
 Default way of accesing a SharePoint Site Collection by utilizing the Microsoft.SharePoint.Client namespace.
 
 In order for the three above way to function as intended the below are required:
-- An App registration in the tenants Azure Active directory
+- An App registration in the tenant's Azure Active directory
 - The below API Permissions: 
   ![image](https://user-images.githubusercontent.com/17068157/199127969-666cefb5-d605-4a7e-a6cb-b728827b69b7.png)
