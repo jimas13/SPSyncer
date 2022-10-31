@@ -2,13 +2,16 @@
 Three similar solutions which achieve communication with the SharepointOnline service from a deamon console app.
 
 
-#ConsoleApp1
+# ConsoleApp1
+
 This directory contains a PnP.Framework sample that shows how to get a client context to a SharePoint Online Site collection with a modern approach.
 
-#ConsoleAppMSGraph
+# ConsoleAppMSGraph
+
 This directory contains a MSGraph project sample that utilizes the GraphServiceClient in order to fetch infrormation about a site collection.
 
-#ConsoleAppSPClient
+# ConsoleAppSPClient
+
 Default way of accesing a SharePoint Site Collection by utilizing the Microsoft.SharePoint.Client namespace.
 
 In order for the three above way to function as intended the below are required:
