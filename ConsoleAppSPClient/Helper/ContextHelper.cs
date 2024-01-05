@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace ConsoleAppSPClient.Helper;
 public class ContextHelper
 {
-    public static ClientContext GetClientContext(string targetUrl, string accessToken)
+    public static ClientContext CreateClientContextWithAuthHeader(string targetUrl, string accessToken)
     {
         ClientContext clientContext = new ClientContext(targetUrl);
         clientContext.ExecutingWebRequest +=

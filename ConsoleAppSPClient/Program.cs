@@ -30,12 +30,11 @@ var result = await app.AcquireTokenForClient(scopes)
 .ExecuteAsync();
 
 //Use our helper method in order to include the previously generated token in our requests to AAD and Sharepoint Online, subsequently
-using (var clientContext = ContextHelper.GetClientContext(siteURL, result.AccessToken))
+using (var clientContext = ContextHelper.CreateClientContextWithAuthHeader(siteURL, result.AccessToken))
 {
     //Load the Web object of our targeted site and print out its Title.
     Web web = clientContext.Web;
     clientContext.Load(web);
     await clientContext.ExecuteQueryAsync();
     Console.WriteLine(web.Title);
-
 }
